@@ -1,3 +1,8 @@
 # mta
 
-a [Sails](http://sailsjs.org) application
+a fork of [https://github.com/mbtaviz/trains-over-time](https://github.com/mbtaviz/trains-over-time)
+
+
+##Goal
+- create a similar one for new york mta
+- learn d3
