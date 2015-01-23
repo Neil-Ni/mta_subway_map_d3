@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New Sails App</title>
+
+		<!-- Viewport mobile tag for sensible mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		
+		<!--  
+				Stylesheets and Preprocessors
+				==============================
+
+				You can always bring in CSS files manually with `<link>` tags, or asynchronously
+				using a solution like AMD (RequireJS).  Or, if you like, you can take advantage 
+				of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+				By default, stylesheets from your `assets/styles` folder are included
+				here automatically (between STYLES and STYLES END). Both CSS (.css) and LESS (.less)
+				are supported. In production, your styles will be minified and concatenated into
+				a single file.
+				
+				To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+				For example, here are a few things you could do:
+						
+						+ Change the order of your CSS files
+						+ Import stylesheets from other directories
+						+ Use a different or additional preprocessor, like SASS, SCSS or Stylus
+		-->
+
+		<!--STYLES-->
+<link rel="stylesheet" href="/styles/importer.css">
+<link rel="stylesheet" href="/styles/main.css">
+<!--STYLES END-->
+	</head>
+
+	<body>
+		<div class="panel">
+			<div id="chart"></div>
+			<div id="time">Loading...</div>
+		</div>
+		<div class="panel">
+			<div id="mareylegend"></div>
+			<div id="marey"></div>
+			<div class="fadeout"></div>
+		</div>
+		<div class="panel">
+			<div id="mareyspacer"></div>
+			<div id="tinymarey"></div>
+		</div>
+		<p class="info">
+			This graphic shows train locations on Boston's Red, Orange, and Blue Subway lines for Tuesday
+			February 4, 2014.  The left map shows train locations relative to stops along their line at 
+			a single point in time.  The right plot shows each station as a vertical line, with time going
+			from top to bottom.  Each horizontal slice shows where each train is at that point in time.
+			Slower trains have steeper lines.  Hover over the right plot to show the train locations
+			at that point in time.  Click on a train's line or dot to focus on just that train.
+		</p>
+		<!--SCRIPTS-->
+<script src="/js/dependencies/sails.io.js"></script>
+<script src="/js/dependencies/angular.js"></script>
+<script src="/js/dependencies/angular-ui-router.js"></script>
+<script src="/js/dependencies/d3.js"></script>
+<script src="/js/dependencies/moment.js"></script>
+<script src="/js/dependencies/underscore.js"></script>
+<script src="/js/marey.js"></script>
+<script src="/js/spider.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/index.js"></script>
+<!--SCRIPTS END-->
+		<script type="text/javascript" src="//localhost:35729/livereload.js"></script>
+	</body>
+</html>
